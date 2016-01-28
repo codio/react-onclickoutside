@@ -50,7 +50,7 @@
     if (source.correspondingElement) {
       return source.correspondingElement.classList.contains(IGNORE_CLASS);
     }
-    return source.classList.contains(IGNORE_CLASS);
+    return source.classList && source.classList.contains(IGNORE_CLASS);
   };
 
   return {
